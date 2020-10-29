@@ -20,105 +20,27 @@ struct Lista_doble
 
     void insertar_dato_inicio(int dato)
     {
-        Nodo *temp=new Nodo(dato);
-        if(vacio())
-        {
-            primero=temp;
-            ultimo=temp;
-        }
-        else
-        {
-            temp->siguiente=primero;
-            primero->anterior=temp;
-            primero=temp;
-        }
+        //Código
     }
 
     void insertar_dato_final(int dato)
     {
-        Nodo *temp=new Nodo(dato);
-
-        if(vacio())
-        {
-            primero=temp;
-            ultimo=temp;
-        }
-        else
-        {
-            ultimo->siguiente=temp;
-            temp->anterior=ultimo;
-            ultimo=temp;
-        }
+        //Código
     }
 
     void eliminar_dato_inicio()
     {
-        if(vacio())
-        {
-            std::cout<<"No se puede eliminar, lista vacia"<<std::endl;
-        }
-        else
-        {
-            if(primero==ultimo)
-            {
-                primero=0;
-                ultimo=0;
-            }
-            else
-            {
-                Nodo *temp=primero;
-                primero=primero->siguiente;
-                primero->anterior=0;
-                delete temp;
-            }
-            std::cout<<"Eliminado"<<std::endl;
-        }
+        //Código
     }
 
     void eliminar_dato_final()
     {
-        if(vacio())
-        {
-            std::cout<<"No se puede eliminar, lista vacia"<<std::endl;
-        }
-        else
-        {
-            if(primero==ultimo)
-            {
-                primero=0;
-                ultimo=0;
-            }
-            else
-            {
-                Nodo *temp=ultimo;
-                ultimo=ultimo->anterior;
-                ultimo->siguiente=0;
-                delete temp;
-            }
-            std::cout<<"Eliminado"<<std::endl;
-        }
+        //Código
     }
 
     void mostrar_lista()
     {
-        if(vacio())
-        {
-            std::cout<<"Lista vacia"<<std::endl;
-        }
-        else
-        {
-            Nodo *aux=primero;
-            bool seguir=true;
-            while(seguir)
-            {
-                std::cout<<aux->dato<<std::endl;
-                if(aux==ultimo)
-                {
-                    seguir=false;
-                }
-                aux=aux->siguiente;
-            }
-        }
+        //Código
     }
 };
 

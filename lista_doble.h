@@ -42,26 +42,7 @@ class Lista_doble
 
     void eliminar_dato_inicio()
     {
-        if(vacio())
-        {
-            std::cout<<"No se puede eliminar, lista vacia"<<std::endl;
-        }
-        else
-        {
-            if(primero==ultimo)
-            {
-                primero=0;
-                ultimo=0;
-            }
-            else
-            {
-                Nodo *temp=primero;
-                primero=primero->siguiente;
-                primero->anterior=0;
-                delete temp;
-            }
-            std::cout<<"Eliminado"<<std::endl;
-        }
+        //Código
     }
 
     void eliminar_dato_final()

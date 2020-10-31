@@ -2,8 +2,6 @@
 #include <cstdlib>
 #include "lista_doble.h"
 
-void clear_screen();
-
 int main()
 {
     char opc;

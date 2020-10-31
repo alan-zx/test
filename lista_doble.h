@@ -21,7 +21,18 @@ class Lista_doble
 
     void insertar_dato_inicio(int dato)
     {
-        //Código
+        Nodo *temp=new Nodo(dato);
+        if(vacio())
+        {
+            primero=temp;
+            ultimo=temp;
+        }
+        else
+        {
+            temp->siguiente=primero;
+            primero->anterior=temp;
+            primero=temp;
+        }
     }
 
     void insertar_dato_final(int dato)

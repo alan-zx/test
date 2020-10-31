@@ -1,8 +1,9 @@
 #ifndef NODO_H_INCLUDED
 #define NODO_H_INCLUDED
 
-struct Nodo
+class Nodo
 {
+  public:
     int dato;
     Nodo *siguiente;
     Nodo *anterior;

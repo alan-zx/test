@@ -3,8 +3,9 @@
 
 #include "nodo.h"
 
-struct Lista_doble
+class Lista_doble
 {
+  public:
     Nodo *primero;
     Nodo *ultimo;
     Lista_doble()

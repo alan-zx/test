@@ -71,7 +71,24 @@ class Lista_doble
 
     void mostrar_lista()
     {
-        //Código
+        if(vacio())
+        {
+            std::cout<<"Lista vacia"<<std::endl;
+        }
+        else
+        {
+            Nodo *aux=primero;
+            bool seguir=true;
+            while(seguir)
+            {
+                std::cout<<aux->dato<<std::endl;
+                if(aux==ultimo)
+                {
+                    seguir=false;
+                }
+                aux=aux->siguiente;
+            }
+        }
     }
 };
 

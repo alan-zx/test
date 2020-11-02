@@ -66,7 +66,26 @@ class Lista_doble
 
     void eliminar_dato_final()
     {
-        //Código
+        if(vacio())
+        {
+            std::cout<<"No se puede eliminar, lista vacia"<<std::endl;
+        }
+        else
+        {
+            if(primero==ultimo)
+            {
+                primero=0;
+                ultimo=0;
+            }
+            else
+            {
+                Nodo *temp=ultimo;
+                ultimo=ultimo->anterior;
+                ultimo->siguiente=0;
+                delete temp;
+            }
+            std::cout<<"Eliminado"<<std::endl;
+        }
     }
 
     void mostrar_lista()
